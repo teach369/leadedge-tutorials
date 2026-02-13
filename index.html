@@ -53,17 +53,23 @@
 
     <section id="contact" class="container contact-section">
         <h2>Enquire Now</h2>
-        <div class="form-box">
-            <input type="text" id="studentName" placeholder="Student Name">
-            <input type="tel" id="parentPhone" placeholder="Parent Phone Number">
-            <select id="classLevel">
+        <form action="https://formspree.io/f/mgolange" method="POST" class="form-box">
+            
+            <input type="text" name="studentName" placeholder="Student Name" required>
+            
+            <input type="tel" name="parentPhone" placeholder="Parent Phone Number" required>
+            
+            <select name="classLevel" required>
                 <option value="">Select Class</option>
                 <option value="Primary">Primary (1-5)</option>
                 <option value="Middle">Middle (6-8)</option>
                 <option value="High">High School (9-10)</option>
             </select>
-            <button onclick="submitEnquiry()">Send Request</button>
-        </div>
+
+            <button type="submit">Send Request</button>
+        </form>
+
+
     </section>
 
     <footer>
